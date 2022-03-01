@@ -1,16 +1,24 @@
 import java.util.Scanner;
-import static java.lang.System.*;
 
 public class App7 {
-    public static void main(String[] args) {
-        var sc=new Scanner(in);
-        float max=0;
-        float x = 1;
-        while ( x !=0){
-           out.println("Nhap so thuc :");
-            x = sc.nextFloat();
-            if(max<=x) max=x;
+public static void main(String[] args) {
+    Scanner sc=new Scanner(System.in);
+            
+    float n,max=0;
+    do 
+    {
+        System.out.println("nhap so thuc: ");
+        n=sc.nextFloat();
+        if(n>max)
+        {
+            max=n;
         }
-        out.println("Max= "+max);
     }
+    while(n!=0);
+    System.out.println("so lon nhat trong cac so vua nhap la: "+max);
+        
+    
+
+}
+
 }
